@@ -1,24 +1,46 @@
-# Desafios Técnicos - Processo Seletivo Knex Consultoria
+# API desenvolvida com FastAPI e PostgreSQL para consulta e gerenciamento de dados do CEAP
 
-Bem-vindo(a) ao processo seletivo da Knex Empresa Júnior de Computação! Este repositório contém os desafios técnicos que fazem parte do nosso processo de seleção.
+## Bibliotecas usadas
+FastAPI
+Usada para criar a API com Python, fornecendo alto desempenho e documentação automática.
 
-## Estrutura
-- `/frontend`: Contém os desafios relacionados a desenvolvimento frontend;
-- `/backend`: Contém os desafios de desenvolvimento backend;
-- `/ui`: Contém os desafios de prototipação focando em UI/UX (em breve...)
-- `/docs`: Documentação adicional sobre o processo (em breve...)
+### Uvicorn
+Servidor ASGI utilizado para executar a aplicação FastAPI.
 
+### SQLAlchemy
+Usada como ORM (Object-Relational Mapper) para modelagem e interação com o banco de dados PostgreSQL.
 
-## Como Participar
-1. Faça um fork deste repositório
-2. Leia atentamente as instruções em cada pasta
-3. Complete os desafios seguindo as diretrizes fornecidas
+### Alembic
+Ferramenta de migração de banco de dados, usada para gerenciar alterações no esquema do banco.
 
-## Prazo
-O prazo para submissão está especificado no edital do processo seletivo vigente.
+### Pandas
+Utilizada para manipulação e análise de dados.
 
-## Dúvidas
-Em caso de dúvidas, entre em contato através do email (org.knex@gmail.com) fornecido no início do processo seletivo.
+### python-multipart
+Biblioteca necessária para permitir o upload de arquivos do tipo multipart/form-data na API.
 
-## Avaliação
-Você receberá feedback e orientações adicionais através do contato fornecido via (email/WhatsApp).
+### psycopg2-binary
+Driver PostgreSQL para Python, utilizado para conectar e executar comandos no banco de dados PostgreSQL através do SQLAlchemy.
+
+## Como executar
+
+1. Clone esse repositório
+2. No terminal
+
+    - Rode o comando para iniciar a aplicação:
+      ```bash
+      docker-compose up --build
+      ```
+    - Depois, para executar o servidor, use:
+      ```bash
+      uvicorn principal:app
+      ```
+3. Para acessar a documentação, use esta URL no navegador: 
+    ```bash
+    http://localhost:8000/docs
+    ```
+
+## Requisitos
+Docker 
+
+Docker Compose
