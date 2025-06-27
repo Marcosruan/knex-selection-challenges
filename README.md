@@ -26,21 +26,14 @@ Driver PostgreSQL para Python, utilizado para conectar e executar comandos no ba
 
 1. Clone esse repositório
 2. No terminal
-
-    - Rode o comando para iniciar a aplicação:
-      ```bash
-      docker-compose up --build
-      ```
-    - Depois, para executar o servidor, use:
-      ```bash
-      uvicorn principal:app
-      ```
+  - Rode o comando para iniciar a aplicação:
+    ```bash
+    docker compose up --build
+    ```
 3. Para acessar a documentação, use esta URL no navegador: 
     ```bash
     http://localhost:8000/docs
     ```
 
 ## Requisitos
-Docker 
-
-Docker Compose
+Docker

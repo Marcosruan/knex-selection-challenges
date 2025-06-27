@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey
 from sqlalchemy.orm import declarative_base
+import os
 
-db = create_engine("postgresql://postgres:knexjr2025@db:5432/ceap")
+db = create_engine(os.getenv("DATABASE_URL"))
 
 Base = declarative_base() 
 
